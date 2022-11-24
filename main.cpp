@@ -36,11 +36,6 @@ void likeTxt(){
     MyReadFile.close();
 
 }
-
-
-
-
-
 int main() {
     // YAML::Node config = YAML::LoadFile("Fruits.yaml");
     // std::cout << config;
