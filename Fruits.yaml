@@ -1,9 +1,0 @@
-path: ./datasets/Fruits  
-train: images/train 
-val: images/val 
-test: images/test 
-
-# Classes
-nc: 15 
-names: [ 'cucumber', 'apple', 'kiwi', 'banana', 'orange', 'coconut', 'peach', 'cherry', 'pear', 'pomegranate',
-         'pineapple', 'watermelon', 'melon', 'grape', 'strawberry' ]

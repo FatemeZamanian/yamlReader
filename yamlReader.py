@@ -1,6 +1,8 @@
 import yaml
 
-with open("Fruits.yaml", "r") as stream:
+fl=input("Give me path and name of your yaml file : ")
+
+with open(fl, "r") as stream:
     try:
         print(yaml.safe_load(stream))
     except yaml.YAMLError as exc:
@@ -9,7 +11,7 @@ with open("Fruits.yaml", "r") as stream:
 
 print('\n \nOther way:\n \n')        
 
-f=open('Fruits.yaml','r')
+f=open(fl,'r')
 w=f.read().split('\n')
 for x in w:
     x=x.split('#')

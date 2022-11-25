@@ -37,34 +37,11 @@ void likeTxt(){
 
 }
 int main() {
-    // YAML::Node config = YAML::LoadFile("Fruits.yaml");
-    // std::cout << config;
+    string file;
+    cout<<"Give me path and name of your Yaml file ";
+    cin>>file;
     YAML::Node node;
-    YAML::Node _baseNode = YAML::LoadFile("Fruits.yaml");
+    YAML::Node _baseNode = YAML::LoadFile(file);
+    std::cout << _baseNode;
 }
 
-// int yaml_parser_initialize(yaml_parser_t *)
-// void yaml_parser_delete(yaml_parser_t *)
-
-// int main(void)
-// {
-
-//   FILE *fh = fopen("Fruits.yaml", "r");
-//   yaml_parser_t parser;
-
-//   /* Initialize parser */
-//   if(!yaml_parser_initialize(&parser))
-//     fputs("Failed to initialize parser!\n", stderr);
-//   if(fh == NULL)
-//     fputs("Failed to open file!\n", stderr);
-
-//   /* Set input file */
-//   yaml_parser_set_input_file(&parser, fh);
-
-//   /* CODE HERE */
-
-//   /* Cleanup */
-//   yaml_parser_delete(&parser);
-//   fclose(fh);
-//   return 0;
-// }
