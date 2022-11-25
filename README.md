@@ -25,7 +25,7 @@ cmake -S=/home/fateme/Desktop/test-projects
 ```
 ### And make 
 ```
-make -j4n
+make -j4
 ```
 ### You can remove build files:
 ```
