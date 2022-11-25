@@ -8,8 +8,10 @@
 ### First create build directory and change path:
 
 
-```mkdir build
-cd build```
+```
+mkdir build
+cd build
+```
 
 ### Set project path :
 `cmake -S=<path>`
