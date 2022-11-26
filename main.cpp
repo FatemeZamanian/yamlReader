@@ -1,14 +1,10 @@
 #include <iostream>
 #include <fstream>
-#include <string>
-#include <cstring>  
+#include <string> 
 #include <sstream>
 #include <yaml-cpp/yaml.h>
-#include <yaml.h>
 #include <stdio.h>
-#include <glib.h>
 
-#include "yaml-cpp/yaml.h"
 using namespace std;
 
 
@@ -42,6 +38,6 @@ int main() {
     cin>>file;
     YAML::Node node;
     YAML::Node _baseNode = YAML::LoadFile(file);
-    std::cout << _baseNode;
+    std::cout << _baseNode<< endl;
 }
 
